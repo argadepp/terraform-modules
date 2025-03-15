@@ -1,0 +1,471 @@
+<?xml version="1.0" standalone="no"?>
+<mlt LC_NUMERIC="C" version="7.30.0" title="Shotcut version 25.01.25" producer="main_bin">
+  <profile description="automatic" width="1092" height="614" progressive="1" sample_aspect_num="1" sample_aspect_den="1" display_aspect_num="546" display_aspect_den="307" frame_rate_num="30" frame_rate_den="1" colorspace="709"/>
+  <producer id="producer0" in="00:00:00.000" out="03:59:59.967">
+    <property name="length">04:00:00.000</property>
+    <property name="eof">pause</property>
+    <property name="resource">/home/pratik/Pictures/Cross_Account/cross-account-1.png</property>
+    <property name="ttl">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="meta.media.progressive">1</property>
+    <property name="seekable">1</property>
+    <property name="format">2</property>
+    <property name="meta.media.width">725</property>
+    <property name="meta.media.height">545</property>
+    <property name="mlt_service">qimage</property>
+    <property name="shotcut:hash">dc7a39b9fad1e9a517dc49f16eb407a1</property>
+    <property name="creation_time">2025-03-15T09:42:11</property>
+    <property name="shotcut:skipConvert">1</property>
+    <property name="xml">was here</property>
+  </producer>
+  <producer id="producer1" in="00:00:00.000" out="03:59:59.967">
+    <property name="length">04:00:00.000</property>
+    <property name="eof">pause</property>
+    <property name="resource">/home/pratik/Pictures/Cross_Account/cross-account-2.png</property>
+    <property name="ttl">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="meta.media.progressive">1</property>
+    <property name="seekable">1</property>
+    <property name="format">2</property>
+    <property name="meta.media.width">600</property>
+    <property name="meta.media.height">360</property>
+    <property name="mlt_service">qimage</property>
+    <property name="shotcut:hash">aa05be5c041449ff29e4bf48863d1b86</property>
+    <property name="creation_time">2025-03-15T09:42:31</property>
+    <property name="shotcut:skipConvert">1</property>
+    <property name="xml">was here</property>
+  </producer>
+  <playlist id="main_bin">
+    <property name="xml_retain">1</property>
+    <entry producer="producer0" in="00:00:00.000" out="00:00:03.967"/>
+    <entry producer="producer1" in="00:00:00.000" out="00:00:03.967"/>
+  </playlist>
+  <producer id="black" in="00:00:00.000" out="00:02:38.833">
+    <property name="length">00:02:38.867</property>
+    <property name="eof">pause</property>
+    <property name="resource">0</property>
+    <property name="aspect_ratio">1</property>
+    <property name="mlt_service">color</property>
+    <property name="mlt_image_format">rgba</property>
+    <property name="set.test_audio">0</property>
+  </producer>
+  <playlist id="background">
+    <entry producer="black" in="00:00:00.000" out="00:02:38.833"/>
+  </playlist>
+  <producer id="producer2" in="00:00:00.000" out="03:59:59.967">
+    <property name="length">04:00:00.000</property>
+    <property name="eof">pause</property>
+    <property name="resource">/home/pratik/Pictures/Cross_Account/channel.png</property>
+    <property name="ttl">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="meta.media.progressive">1</property>
+    <property name="seekable">1</property>
+    <property name="format">2</property>
+    <property name="meta.media.width">552</property>
+    <property name="meta.media.height">192</property>
+    <property name="mlt_service">qimage</property>
+    <property name="creation_time">2025-03-15T09:39:52</property>
+    <property name="shotcut:skipConvert">0</property>
+    <property name="shotcut:caption">channel.png</property>
+    <property name="shotcut:hash">5aef0c6c22aec13c643bb95dadd21368</property>
+    <property name="ignore_points">0</property>
+    <property name="xml">was here</property>
+  </producer>
+  <producer id="producer3" in="00:00:00.000" out="03:59:59.967">
+    <property name="length">04:00:00.000</property>
+    <property name="eof">pause</property>
+    <property name="resource">/home/pratik/Pictures/Cross_Account/cross-account-1.png</property>
+    <property name="ttl">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="meta.media.progressive">1</property>
+    <property name="seekable">1</property>
+    <property name="format">2</property>
+    <property name="meta.media.width">725</property>
+    <property name="meta.media.height">545</property>
+    <property name="mlt_service">qimage</property>
+    <property name="shotcut:hash">dc7a39b9fad1e9a517dc49f16eb407a1</property>
+    <property name="creation_time">2025-03-15T09:42:11</property>
+    <property name="shotcut:skipConvert">1</property>
+    <property name="xml">was here</property>
+    <property name="shotcut:caption">cross-account-1.png</property>
+  </producer>
+  <tractor id="tractor0" in="00:00:00.000" out="00:00:00.033">
+    <property name="shotcut:transition">lumaMix</property>
+    <track producer="producer2" in="00:00:02.067" out="00:00:02.100"/>
+    <track producer="producer3" in="00:00:00.000" out="00:00:00.033"/>
+    <transition id="transition0" out="00:00:00.033">
+      <property name="a_track">0</property>
+      <property name="b_track">1</property>
+      <property name="factory">loader</property>
+      <property name="mlt_service">luma</property>
+      <property name="alpha_over">1</property>
+      <property name="fix_background_alpha">1</property>
+    </transition>
+    <transition id="transition1" out="00:00:00.033">
+      <property name="a_track">0</property>
+      <property name="b_track">1</property>
+      <property name="mlt_service">mix</property>
+      <property name="start">-1</property>
+      <property name="accepts_blanks">1</property>
+    </transition>
+  </tractor>
+  <producer id="producer4" in="00:00:00.000" out="03:59:59.967">
+    <property name="length">04:00:00.000</property>
+    <property name="eof">pause</property>
+    <property name="resource">/home/pratik/Pictures/Cross_Account/cross-account-3.png</property>
+    <property name="ttl">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="meta.media.progressive">1</property>
+    <property name="seekable">1</property>
+    <property name="format">2</property>
+    <property name="meta.media.width">730</property>
+    <property name="meta.media.height">464</property>
+    <property name="mlt_service">qimage</property>
+    <property name="creation_time">2025-03-15T09:53:35</property>
+    <property name="shotcut:skipConvert">0</property>
+    <property name="shotcut:caption">cross-account-3.png</property>
+    <property name="shotcut:hash">3ea316638f943dce27fa162d1dc8303f</property>
+    <property name="ignore_points">0</property>
+    <property name="xml">was here</property>
+  </producer>
+  <producer id="producer5" in="00:00:00.000" out="03:59:59.967">
+    <property name="length">04:00:00.000</property>
+    <property name="eof">pause</property>
+    <property name="resource">/home/pratik/Pictures/Cross_Account/cross-account-2.png</property>
+    <property name="ttl">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="meta.media.progressive">1</property>
+    <property name="seekable">1</property>
+    <property name="format">2</property>
+    <property name="meta.media.width">600</property>
+    <property name="meta.media.height">360</property>
+    <property name="mlt_service">qimage</property>
+    <property name="shotcut:hash">aa05be5c041449ff29e4bf48863d1b86</property>
+    <property name="creation_time">2025-03-15T09:42:31</property>
+    <property name="shotcut:skipConvert">1</property>
+    <property name="xml">was here</property>
+    <property name="shotcut:caption">cross-account-2.png</property>
+  </producer>
+  <chain id="chain0" out="00:02:39.000">
+    <property name="length">00:02:39.033</property>
+    <property name="eof">pause</property>
+    <property name="resource">/home/pratik/2025-03-15 12-06-42.mkv</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="meta.media.nb_streams">2</property>
+    <property name="meta.media.0.stream.type">video</property>
+    <property name="meta.media.0.stream.frame_rate">30</property>
+    <property name="meta.media.0.stream.sample_aspect_ratio">0</property>
+    <property name="meta.media.0.codec.width">1092</property>
+    <property name="meta.media.0.codec.height">614</property>
+    <property name="meta.media.0.codec.rotate">0</property>
+    <property name="meta.media.0.codec.pix_fmt">yuv420p</property>
+    <property name="meta.media.0.codec.sample_aspect_ratio">1</property>
+    <property name="meta.media.0.codec.colorspace">709</property>
+    <property name="meta.media.0.codec.color_trc">1</property>
+    <property name="meta.media.0.codec.name">h264</property>
+    <property name="meta.media.0.codec.long_name">H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10</property>
+    <property name="meta.media.0.codec.bit_rate">0</property>
+    <property name="meta.attr.0.stream.DURATION.markup">00:02:39.033000000</property>
+    <property name="meta.media.1.stream.type">audio</property>
+    <property name="meta.media.1.codec.sample_fmt">fltp</property>
+    <property name="meta.media.1.codec.sample_rate">48000</property>
+    <property name="meta.media.1.codec.channels">2</property>
+    <property name="meta.media.1.codec.layout">stereo</property>
+    <property name="meta.media.1.codec.name">aac</property>
+    <property name="meta.media.1.codec.long_name">AAC (Advanced Audio Coding)</property>
+    <property name="meta.media.1.codec.bit_rate">0</property>
+    <property name="meta.attr.1.stream.title.markup">simple_aac</property>
+    <property name="meta.attr.1.stream.DURATION.markup">00:02:38.869000000</property>
+    <property name="meta.attr.ENCODER.markup">Lavf58.29.100</property>
+    <property name="seekable">1</property>
+    <property name="meta.media.sample_aspect_num">1</property>
+    <property name="meta.media.sample_aspect_den">1</property>
+    <property name="audio_index">1</property>
+    <property name="video_index">0</property>
+    <property name="creation_time">2025-03-15T06:39:21</property>
+    <property name="vstream">0</property>
+    <property name="meta.media.frame_rate_num">30</property>
+    <property name="meta.media.frame_rate_den">1</property>
+    <property name="meta.media.colorspace">709</property>
+    <property name="meta.media.color_trc">1</property>
+    <property name="meta.media.has_b_frames">2</property>
+    <property name="meta.media.width">1092</property>
+    <property name="meta.media.height">614</property>
+    <property name="meta.media.aspect_ratio">1</property>
+    <property name="meta.media.color_range">mpeg</property>
+    <property name="astream">0</property>
+    <property name="shotcut:skipConvert">0</property>
+    <property name="meta.media.top_field_first">0</property>
+    <property name="meta.media.progressive">1</property>
+    <property name="shotcut:hash">3a16d38705a8d186a8c40ba0ffb2ddc8</property>
+    <property name="ignore_points">0</property>
+    <property name="shotcut:caption">2025-03-15 12-06-42.mkv</property>
+    <property name="xml">was here</property>
+  </chain>
+  <chain id="chain1" out="00:02:39.000">
+    <property name="length">00:02:39.033</property>
+    <property name="eof">pause</property>
+    <property name="resource">/home/pratik/2025-03-15 12-06-42.mkv</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="meta.media.nb_streams">2</property>
+    <property name="meta.media.0.stream.type">video</property>
+    <property name="meta.media.0.stream.frame_rate">30</property>
+    <property name="meta.media.0.stream.sample_aspect_ratio">0</property>
+    <property name="meta.media.0.codec.width">1092</property>
+    <property name="meta.media.0.codec.height">614</property>
+    <property name="meta.media.0.codec.rotate">0</property>
+    <property name="meta.media.0.codec.pix_fmt">yuv420p</property>
+    <property name="meta.media.0.codec.sample_aspect_ratio">1</property>
+    <property name="meta.media.0.codec.colorspace">709</property>
+    <property name="meta.media.0.codec.color_trc">1</property>
+    <property name="meta.media.0.codec.name">h264</property>
+    <property name="meta.media.0.codec.long_name">H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10</property>
+    <property name="meta.media.0.codec.bit_rate">0</property>
+    <property name="meta.attr.0.stream.DURATION.markup">00:02:39.033000000</property>
+    <property name="meta.media.1.stream.type">audio</property>
+    <property name="meta.media.1.codec.sample_fmt">fltp</property>
+    <property name="meta.media.1.codec.sample_rate">48000</property>
+    <property name="meta.media.1.codec.channels">2</property>
+    <property name="meta.media.1.codec.layout">stereo</property>
+    <property name="meta.media.1.codec.name">aac</property>
+    <property name="meta.media.1.codec.long_name">AAC (Advanced Audio Coding)</property>
+    <property name="meta.media.1.codec.bit_rate">0</property>
+    <property name="meta.attr.1.stream.title.markup">simple_aac</property>
+    <property name="meta.attr.1.stream.DURATION.markup">00:02:38.869000000</property>
+    <property name="meta.attr.ENCODER.markup">Lavf58.29.100</property>
+    <property name="seekable">1</property>
+    <property name="meta.media.sample_aspect_num">1</property>
+    <property name="meta.media.sample_aspect_den">1</property>
+    <property name="audio_index">1</property>
+    <property name="video_index">0</property>
+    <property name="creation_time">2025-03-15T06:39:21</property>
+    <property name="vstream">0</property>
+    <property name="meta.media.frame_rate_num">30</property>
+    <property name="meta.media.frame_rate_den">1</property>
+    <property name="meta.media.colorspace">709</property>
+    <property name="meta.media.color_trc">1</property>
+    <property name="meta.media.has_b_frames">2</property>
+    <property name="meta.media.width">1092</property>
+    <property name="meta.media.height">614</property>
+    <property name="meta.media.aspect_ratio">1</property>
+    <property name="meta.media.color_range">mpeg</property>
+    <property name="astream">0</property>
+    <property name="shotcut:skipConvert">0</property>
+    <property name="meta.media.top_field_first">0</property>
+    <property name="meta.media.progressive">1</property>
+    <property name="shotcut:hash">3a16d38705a8d186a8c40ba0ffb2ddc8</property>
+    <property name="ignore_points">0</property>
+    <property name="shotcut:caption">2025-03-15 12-06-42.mkv</property>
+    <property name="xml">was here</property>
+  </chain>
+  <chain id="chain2" out="00:02:39.000">
+    <property name="length">00:02:39.033</property>
+    <property name="eof">pause</property>
+    <property name="resource">/home/pratik/2025-03-15 12-06-42.mkv</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="meta.media.nb_streams">2</property>
+    <property name="meta.media.0.stream.type">video</property>
+    <property name="meta.media.0.stream.frame_rate">30</property>
+    <property name="meta.media.0.stream.sample_aspect_ratio">0</property>
+    <property name="meta.media.0.codec.width">1092</property>
+    <property name="meta.media.0.codec.height">614</property>
+    <property name="meta.media.0.codec.rotate">0</property>
+    <property name="meta.media.0.codec.pix_fmt">yuv420p</property>
+    <property name="meta.media.0.codec.sample_aspect_ratio">1</property>
+    <property name="meta.media.0.codec.colorspace">709</property>
+    <property name="meta.media.0.codec.color_trc">1</property>
+    <property name="meta.media.0.codec.name">h264</property>
+    <property name="meta.media.0.codec.long_name">H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10</property>
+    <property name="meta.media.0.codec.bit_rate">0</property>
+    <property name="meta.attr.0.stream.DURATION.markup">00:02:39.033000000</property>
+    <property name="meta.media.1.stream.type">audio</property>
+    <property name="meta.media.1.codec.sample_fmt">fltp</property>
+    <property name="meta.media.1.codec.sample_rate">48000</property>
+    <property name="meta.media.1.codec.channels">2</property>
+    <property name="meta.media.1.codec.layout">stereo</property>
+    <property name="meta.media.1.codec.name">aac</property>
+    <property name="meta.media.1.codec.long_name">AAC (Advanced Audio Coding)</property>
+    <property name="meta.media.1.codec.bit_rate">0</property>
+    <property name="meta.attr.1.stream.title.markup">simple_aac</property>
+    <property name="meta.attr.1.stream.DURATION.markup">00:02:38.869000000</property>
+    <property name="meta.attr.ENCODER.markup">Lavf58.29.100</property>
+    <property name="seekable">1</property>
+    <property name="meta.media.sample_aspect_num">1</property>
+    <property name="meta.media.sample_aspect_den">1</property>
+    <property name="audio_index">1</property>
+    <property name="video_index">0</property>
+    <property name="creation_time">2025-03-15T06:39:21</property>
+    <property name="vstream">0</property>
+    <property name="meta.media.frame_rate_num">30</property>
+    <property name="meta.media.frame_rate_den">1</property>
+    <property name="meta.media.colorspace">709</property>
+    <property name="meta.media.color_trc">1</property>
+    <property name="meta.media.has_b_frames">2</property>
+    <property name="meta.media.width">1092</property>
+    <property name="meta.media.height">614</property>
+    <property name="meta.media.aspect_ratio">1</property>
+    <property name="meta.media.color_range">mpeg</property>
+    <property name="astream">0</property>
+    <property name="shotcut:skipConvert">0</property>
+    <property name="meta.media.top_field_first">0</property>
+    <property name="meta.media.progressive">1</property>
+    <property name="shotcut:hash">3a16d38705a8d186a8c40ba0ffb2ddc8</property>
+    <property name="ignore_points">0</property>
+    <property name="shotcut:caption">2025-03-15 12-06-42.mkv</property>
+    <property name="xml">was here</property>
+  </chain>
+  <producer id="producer6" in="00:00:00.000" out="03:59:59.967">
+    <property name="length">04:00:00.000</property>
+    <property name="eof">pause</property>
+    <property name="resource">/home/pratik/Pictures/Cross_Account/cross-account-4.png</property>
+    <property name="ttl">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="meta.media.progressive">1</property>
+    <property name="seekable">1</property>
+    <property name="format">2</property>
+    <property name="meta.media.width">731</property>
+    <property name="meta.media.height">494</property>
+    <property name="mlt_service">qimage</property>
+    <property name="creation_time">2025-03-15T10:09:00</property>
+    <property name="shotcut:skipConvert">0</property>
+    <property name="shotcut:caption">cross-account-4.png</property>
+    <property name="shotcut:hash">5a56ab70a9a5e3737cee4495b733677c</property>
+    <property name="ignore_points">0</property>
+    <property name="xml">was here</property>
+  </producer>
+  <producer id="producer7" in="00:00:00.000" out="03:59:59.967">
+    <property name="length">04:00:00.000</property>
+    <property name="eof">pause</property>
+    <property name="resource">/home/pratik/Pictures/Cross_Account/like-share.jpeg</property>
+    <property name="ttl">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="meta.media.progressive">1</property>
+    <property name="seekable">1</property>
+    <property name="format">1</property>
+    <property name="meta.media.width">225</property>
+    <property name="meta.media.height">225</property>
+    <property name="mlt_service">qimage</property>
+    <property name="creation_time">2025-03-15T10:13:11</property>
+    <property name="shotcut:skipConvert">0</property>
+    <property name="shotcut:caption">like-share.jpeg</property>
+    <property name="shotcut:hash">c42b074b9e7220d7937669b0ce559887</property>
+    <property name="ignore_points">0</property>
+    <property name="xml">was here</property>
+  </producer>
+  <playlist id="playlist0">
+    <property name="shotcut:video">1</property>
+    <property name="shotcut:name">V1</property>
+    <entry producer="producer2" in="00:00:00.000" out="00:00:02.033"/>
+    <entry producer="tractor0" in="00:00:00.000" out="00:00:00.033"/>
+    <entry producer="producer3" in="00:00:00.067" out="00:00:06.500"/>
+    <entry producer="producer4" in="00:00:00.000" out="00:00:10.800"/>
+    <entry producer="producer5" in="00:00:00.000" out="00:00:15.467"/>
+    <entry producer="chain0" in="00:00:34.933" out="00:01:15.833"/>
+    <entry producer="chain1" in="00:01:22.767" out="00:02:08.633"/>
+    <entry producer="chain2" in="00:02:10.033" out="00:02:33.833"/>
+    <entry producer="producer6" in="00:00:00.000" out="00:00:07.700"/>
+    <entry producer="producer7" in="00:00:00.000" out="00:00:05.500"/>
+  </playlist>
+  <chain id="chain3" out="00:02:38.833">
+    <property name="length">00:02:38.867</property>
+    <property name="eof">pause</property>
+    <property name="resource">/home/pratik/Downloads/ElevenLabs_CrossAccount.mp3</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="meta.media.nb_streams">1</property>
+    <property name="meta.media.0.stream.type">audio</property>
+    <property name="meta.media.0.codec.sample_fmt">fltp</property>
+    <property name="meta.media.0.codec.sample_rate">44100</property>
+    <property name="meta.media.0.codec.channels">1</property>
+    <property name="meta.media.0.codec.layout">mono</property>
+    <property name="meta.media.0.codec.name">mp3float</property>
+    <property name="meta.media.0.codec.long_name">MP3 (MPEG audio layer 3)</property>
+    <property name="meta.media.0.codec.bit_rate">128000</property>
+    <property name="meta.attr.encoder.markup">Lavf59.27.100</property>
+    <property name="seekable">1</property>
+    <property name="audio_index">0</property>
+    <property name="video_index">-1</property>
+    <property name="creation_time">2025-03-15T06:21:25</property>
+    <property name="astream">0</property>
+    <property name="shotcut:skipConvert">0</property>
+    <property name="shotcut:hash">ff76c9733049e822fa1a6f6e0fa4f9cd</property>
+    <property name="ignore_points">0</property>
+    <property name="shotcut:caption">ElevenLabs_CrossAccount.mp3</property>
+    <property name="xml">was here</property>
+  </chain>
+  <playlist id="playlist1">
+    <property name="shotcut:audio">1</property>
+    <property name="shotcut:name">A1</property>
+    <entry producer="chain3" in="00:00:00.000" out="00:02:38.833"/>
+  </playlist>
+  <chain id="chain4" out="00:01:25.933">
+    <property name="length">00:01:25.967</property>
+    <property name="eof">pause</property>
+    <property name="resource">/home/pratik/Downloads/background-music-for-video-308422.mp3</property>
+    <property name="mlt_service">avformat</property>
+    <property name="meta.media.nb_streams">1</property>
+    <property name="meta.media.0.stream.type">audio</property>
+    <property name="meta.media.0.codec.sample_fmt">fltp</property>
+    <property name="meta.media.0.codec.sample_rate">44100</property>
+    <property name="meta.media.0.codec.channels">2</property>
+    <property name="meta.media.0.codec.layout">stereo</property>
+    <property name="meta.media.0.codec.name">mp3float</property>
+    <property name="meta.media.0.codec.long_name">MP3 (MPEG audio layer 3)</property>
+    <property name="meta.media.0.codec.bit_rate">256000</property>
+    <property name="seekable">1</property>
+    <property name="audio_index">0</property>
+    <property name="video_index">-1</property>
+    <property name="astream">0</property>
+    <property name="video_delay">0</property>
+    <property name="shotcut:hash">a90fb1b0fd00334c724ef9656c650d8f</property>
+    <property name="shotcut:skipConvert">0</property>
+    <property name="shotcut:defaultAudioIndex">0</property>
+    <property name="shotcut:caption">background-music-for-video-308422.mp3</property>
+    <property name="shotcut:producer">avformat</property>
+    <property name="xml">was here</property>
+  </chain>
+  <playlist id="playlist2">
+    <property name="shotcut:audio">1</property>
+    <property name="shotcut:name">A2</property>
+    <blank length="00:02:34.867"/>
+    <entry producer="chain4" in="00:01:12.733" out="00:01:16.700"/>
+  </playlist>
+  <tractor id="tractor1" title="Shotcut version 25.01.25" in="00:00:00.000" out="00:02:38.833">
+    <property name="shotcut">1</property>
+    <property name="shotcut:projectAudioChannels">2</property>
+    <property name="shotcut:projectFolder">0</property>
+    <property name="shotcut:scaleFactor">0.19764</property>
+    <track producer="background"/>
+    <track producer="playlist0" hide="audio"/>
+    <track producer="playlist1" hide="video"/>
+    <track producer="playlist2" hide="video"/>
+    <transition id="transition2">
+      <property name="a_track">0</property>
+      <property name="b_track">1</property>
+      <property name="mlt_service">mix</property>
+      <property name="always_active">1</property>
+      <property name="sum">1</property>
+    </transition>
+    <transition id="transition3">
+      <property name="a_track">0</property>
+      <property name="b_track">1</property>
+      <property name="version">0.1</property>
+      <property name="mlt_service">frei0r.cairoblend</property>
+      <property name="threads">0</property>
+      <property name="disable">1</property>
+    </transition>
+    <transition id="transition4">
+      <property name="a_track">0</property>
+      <property name="b_track">2</property>
+      <property name="mlt_service">mix</property>
+      <property name="always_active">1</property>
+      <property name="sum">1</property>
+    </transition>
+    <transition id="transition5">
+      <property name="a_track">0</property>
+      <property name="b_track">3</property>
+      <property name="mlt_service">mix</property>
+      <property name="always_active">1</property>
+      <property name="sum">1</property>
+    </transition>
+  </tractor>
+</mlt>
