@@ -6,7 +6,15 @@ resource "helm_release" "this" {
   namespace        = var.namespace
   create_namespace = var.create_namespace
   values           = var.values
-  set              = var.set
+
+  dynamic "set" {
+    for_each = var.set
+    content {
+      name  = set.value.name
+      value = set.value.value
+      type  = set.value.type
+    }
+  }
 
   atomic          = var.atomic
   cleanup_on_fail = var.cleanup_on_fail
