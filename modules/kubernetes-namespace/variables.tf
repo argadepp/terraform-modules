@@ -35,13 +35,11 @@ variable "resource_quota" {
   default = null
 
   validation {
-    condition = (
-      var.resource_quota == null ||
-      (
-        length(trimspace(var.resource_quota.name)) > 0 &&
-        length(var.resource_quota.hard) > 0
-      )
+    condition = var.resource_quota == null ? true : (
+      length(trimspace(var.resource_quota.name)) > 0 &&
+      length(var.resource_quota.hard) > 0
     )
+
     error_message = "When resource_quota is configured, name must not be empty and hard must contain at least one quota."
   }
 }
